@@ -8,7 +8,7 @@ jobs:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
-    - uses: Djipyy/amd-pr-checkbox@master
+    - uses: Djipyy/amd-pr-checkbox@v1
       with:
         pat: ${{ secrets.PAT }}
         merging_pr_number: ${{ github.event.pull_request.number }}
