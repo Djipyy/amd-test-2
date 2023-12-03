@@ -12,3 +12,4 @@ jobs:
       with:
         pat: ${{ secrets.PAT }}
         merging_pr_number: ${{ github.event.pull_request.number }}
+        merging_pr_repository: ${{ github.event.pull_request.head.repo.full_name }}
